@@ -1,0 +1,47 @@
+[
+    {
+        "name": "osu!",
+        "description": "The official osu! client",
+        "owner": "ppy",
+        "repo": "osu",
+        "files": {
+            "macOS": {
+                "asset_name": "osu.app.Apple.Silicon.zip",
+                "internal_name": "osu!.app/Contents/MacOS/osu.Game.dll"
+            },
+            "Windows": {
+                "asset_name": "install.exe",
+                "internal_name": "lib/app/osu.Game.dll",
+                "type": "exe"
+            },
+            "Linux": {
+                "asset_name": "osu.AppImage",
+                "internal_name": "usr/bin/osu.Game.dll",
+                "type": "appimage"
+            }
+        },
+        "count": 5
+    },
+    {
+        "name": "osu! GU",
+        "description": "GooGuTeam's custom osu! client for g0v0-server",
+        "owner": "GooGuTeam",
+        "repo": "osu",
+        "files": {
+            "macOS": {
+                "asset_name": "osu.app.Apple.Silicon.zip",
+                "internal_name": "osu! GU.app/Contents/MacOS/osu.Game.dll"
+            },
+            "Windows": {
+                "asset_name": "osu-lazer-gu-win-Portable.zip",
+                "internal_name": "current/osu.Game.dll"
+            },
+            "Linux": {
+                "asset_name": "osu.AppImage",
+                "internal_name": "usr/bin/osu.Game.dll",
+                "type": "appimage"
+            }
+        },
+        "count": 5
+    }
+]

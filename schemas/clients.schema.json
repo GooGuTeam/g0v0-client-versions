@@ -1,0 +1,69 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "name": {
+                "type": "string",
+                "description": "The name of the client"
+            },
+            "description": {
+                "type": "string",
+                "description": "A description of the client"
+            },
+            "owner": {
+                "type": "string",
+                "description": "The owner of the repository"
+            },
+            "repo": {
+                "type": "string",
+                "description": "The repository name"
+            },
+            "files": {
+                "type": "object",
+                "description": "Mapping of platform to file details",
+                "additionalProperties": {
+                    "type": "object",
+                    "properties": {
+                        "asset_name": {
+                            "type": "string",
+                            "description": "The filename in the release assets"
+                        },
+                        "internal_name": {
+                            "type": "string",
+                            "description": "The internal path to the file (e.g. dll)"
+                        },
+                        "type": {
+                            "enum": [
+                                "zip",
+                                "exe",
+                                "appimage"
+                            ],
+                            "description": "The type of the file (e.g. 'zip', 'tar.gz')",
+                            "default": "zip"
+                        }
+                    },
+                    "required": [
+                        "asset_name",
+                        "internal_name"
+                    ]
+                }
+            },
+            "count": {
+                "type": "integer",
+                "description": "Number of lazer versions supported",
+                "minimum": 1,
+                "default": 1
+            }
+        },
+        "required": [
+            "name",
+            "description",
+            "owner",
+            "repo",
+            "files",
+            "count"
+        ]
+    }
+}
