@@ -287,10 +287,8 @@ if __name__ == "__main__":
     import asyncio
     import sys
 
-    GH_TOKEN = os.environ.get("GH_TOKEN", "")
-
     if sys.platform != "linux":
         print("This script currently only supports Linux platform.")
         sys.exit(1)
 
-    asyncio.run(main())
+    asyncio.run(main(os.environ.get("GH_TOKEN", "")))
