@@ -2,9 +2,9 @@
 
 This repository provides a tool to generate version hashes for different clients of the osu! game. The version hashes are used to identify specific versions of the game across various platforms.
 
-The latest generated version hashes can be found in the [version_list.json](version_list.json) file.
+The latest generated version hashes can be found in the [version_list.json](version_list.json) file and the [community_versions/](community_versions/) directory.
 
-## Client schema Definition
+## Client schema definition
 
 The client definitions are stored in JSON files that follow a specific schema. The schema defines the structure and required fields for each client entry. The schema file is located at [schemas/clients.schema.json](schemas/clients.schema.json).
 
