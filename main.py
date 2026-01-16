@@ -31,10 +31,20 @@ class Client(TypedDict):
     repo: str
     files: dict[str, File]
     count: int
+    support_android: bool
+    support_ios: bool
 
 
 def read_clients() -> list[Client]:
-    return json.loads(Path(CLIENTS_FILE).read_text())
+    clients = json.loads(Path(CLIENTS_FILE).read_text())
+    for client in clients:
+        if "count" not in client:
+            client["count"] = 1
+        if "support_android" not in client:
+            client["support_android"] = True
+        if "support_ios" not in client:
+            client["support_ios"] = True
+    return clients
 
 
 # github releases
@@ -225,6 +235,10 @@ async def main(gh_token: str = ""):
             async def process_one(osname, file_info):
                 asset_name = file_info["asset_name"]
                 internal_name = file_info["internal_name"]
+
+                 # replace placeholders
+                asset_name = asset_name.replace("{tag}", release["tag"])
+
                 if asset_name not in release["files"]:
                     print(f"\t    [!] Asset '{asset_name}' not found in release.")
                     return None
@@ -258,14 +272,16 @@ async def main(gh_token: str = ""):
 
             # android and ios
             # https://github.com/ppy/osu/blob/master/osu.Game/OsuGameBase.cs#L270-L275
-            version_str = f"{tag}-Android"
-            hash = compute_md5(version_str)
-            version_hashes[hash] = "Android"
-            print(f"\t      Android version hash: {hash}")
-            version_str = f"{tag}-iOS"
-            hash = compute_md5(version_str)
-            version_hashes[hash] = "iOS"
-            print(f"\t      iOS version hash: {hash}")
+            if client["support_android"]:
+                version_str = f"{tag}-Android"
+                hash = compute_md5(version_str)
+                version_hashes[hash] = "Android"
+                print(f"\t      Android version hash: {hash}")
+            if client["support_ios"]:
+                version_str = f"{tag}-iOS"
+                hash = compute_md5(version_str)
+                version_hashes[hash] = "iOS"
+                print(f"\t      iOS version hash: {hash}")
 
             version_info: VersionInfo = {
                 "version": tag,

@@ -55,6 +55,16 @@
                 "description": "Number of lazer versions supported",
                 "minimum": 1,
                 "default": 1
+            },
+            "support_android": {
+                "type": "boolean",
+                "description": "Whether the client supports Android platform",
+                "default": true
+            },
+            "support_ios": {
+                "type": "boolean",
+                "description": "Whether the client supports iOS platform",
+                "default": true
             }
         },
         "required": [
