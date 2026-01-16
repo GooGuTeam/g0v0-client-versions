@@ -2,9 +2,12 @@ name: Update Version List
 
 on:
   push:
+    branches:
+      - main
     paths:
       - 'main.py'
-      - 'clients.json'
+      - 'default_clients.json'
+      - 'community_clients/*.json'
   workflow_dispatch:
   schedule:
     - cron: '0 */2 * * *'
