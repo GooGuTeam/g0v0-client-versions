@@ -1,0 +1,21 @@
+[
+    {
+        "name": "Ez2Lazer",
+        "description": "Ez to Lazer(Pursue the Ez2Ac style in the lazer)",
+        "owner": "SK-la",
+        "repo": "Ez2Lazer",
+        "files": {
+            "Windows": {
+                "asset_name": "Ez2Lazer_release_x64.zip",
+                "internal_name": "osu.Game.dll"
+            },
+            "Windows Debug Build": {
+                "asset_name": "Ez2Lazer_debug_x64.zip",
+                "internal_name": "osu.Game.dll"
+            }
+        },
+        "count": 5,
+        "support_android": false,
+        "support_ios": false
+    }
+]
