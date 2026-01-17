@@ -45,6 +45,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update version list [skip ci]"
-          file_pattern: "version_list.json"
+          file_pattern: "version_list.json community_versions/*.json"
           commit_user_name: "github-actions[bot]"
           commit_user_email: "github-actions[bot]@users.noreply.github.com"
