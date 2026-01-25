@@ -3,6 +3,14 @@
         "name": "Ez2Lazer",
         "versions": [
             {
+                "version": "2026-1-25",
+                "release_date": "2026-01-25T11:45:01Z",
+                "hashes": {
+                    "ef085c0bd47233ac756a124509ab191b": "Windows",
+                    "a1408e04bf3774e4540f2d7be11053a6": "Windows Debug Build"
+                }
+            },
+            {
                 "version": "2026-1-19",
                 "release_date": "2026-01-18T16:42:36Z",
                 "hashes": {
@@ -29,11 +37,6 @@
             {
                 "version": "2026-1-4",
                 "release_date": "2026-01-04T01:04:33Z",
-                "hashes": {}
-            },
-            {
-                "version": "2026-1-3",
-                "release_date": "2026-01-02T17:28:34Z",
                 "hashes": {}
             }
         ]
