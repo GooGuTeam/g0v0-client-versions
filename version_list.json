@@ -6,6 +6,7 @@
                 "version": "2026.209.0-tachyon",
                 "release_date": "2026-02-09T12:43:25Z",
                 "hashes": {
+                    "9c98343503df4ef00a2fc277862e9b92": "macOS",
                     "d6f5b885afd1ccbb17c01d643124dffd": "Windows",
                     "3dc6f6b1b4b73241e2faff3eb785301a": "Linux",
                     "c21898a3b882ccdd3c034095d3922e7e": "Android",
@@ -105,6 +106,8 @@
                 "release_date": "2026-01-02T10:32:44Z",
                 "hashes": {
                     "38ca5a37894d8092c7b612d73601df03": "macOS",
+                    "c03d3263673b97411dfc3175a80ec4d8": "Windows",
+                    "fcbd468fe6b741e1f96f24ced169bd73": "Linux",
                     "166245ec6492bbd304ad5aa1ea8a44d4": "Android",
                     "ebd7a80b05bfeb9611b067f3a02dae6e": "iOS"
                 }
@@ -184,6 +187,7 @@
                 "version": "2026.111.0-lazer",
                 "release_date": "2026-01-11T07:18:25Z",
                 "hashes": {
+                    "8d62b3de6acef558d1aa30ac8a02bb21": "macOS",
                     "605789dd94963a4a4b43fac08eea71c9": "Windows",
                     "b4823ad581dae1419fefc62009822fd2": "Linux",
                     "9c942426abe925009bbffd94df361b5b": "Android",
