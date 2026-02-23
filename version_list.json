@@ -52,7 +52,6 @@
                 "hashes": {
                     "9f81197264a7124f2acb596ec72319e0": "macOS",
                     "0ec9b0b6372cd61465d8d3d6ea067563": "Windows",
-                    "e45560dc0c94e851634c76cc622bfdfa": "Linux",
                     "79c03eed443fbfc0b0122fbecda3808b": "Android",
                     "9a492b0077df31449413845b3d477ee7": "iOS"
                 }
@@ -73,7 +72,6 @@
                 "release_date": "2026-01-16T10:09:15Z",
                 "hashes": {
                     "dd85d7837b7b4d83ca35c2dbbaa72767": "macOS",
-                    "4518bb3bd2a98c33bd0eb017f5ecece4": "Windows",
                     "4b1b118982ad833132eb55a4665de1c5": "Linux",
                     "826c37a57d81decbab3158342fa424d9": "Android",
                     "5f4e065220111ae1081f1488ceb9b699": "iOS"
@@ -177,7 +175,6 @@
                 "release_date": "2026-01-17T13:51:53Z",
                 "hashes": {
                     "a44612e2aa6730beccf5e19a65285e3b": "macOS",
-                    "43502b7360d6d84a40f85075e6af3293": "Windows",
                     "cd644f79cfa8ee779ec3c6612a95e78d": "Linux",
                     "5959fe71b74917be70cd05e3e9c3133c": "Android",
                     "2046f429cd145744b998981ee5ffceda": "iOS"
