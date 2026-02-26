@@ -18,6 +18,7 @@
                 "release_date": "2026-01-30T16:00:56Z",
                 "hashes": {
                     "8a5dad3a2e5145bfec0ef625daab759c": "macOS",
+                    "da6be652a1eccaebd039d88ccbf58b70": "Windows",
                     "9bc7329821fd45697d1140e207f1160c": "Linux",
                     "07db93fbd3105f8c83932589614a3482": "Android",
                     "e36071214c59dd6080d13bf096358398": "iOS"
