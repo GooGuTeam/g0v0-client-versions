@@ -160,7 +160,6 @@
                 "version": "2025.1209.0-lazer",
                 "release_date": "2025-12-09T11:01:31Z",
                 "hashes": {
-                    "ad3aa9c707820481fb61407638e45327": "macOS",
                     "d1b2ecc53c814d55da0db2fbb642fc2f": "Windows",
                     "f45df401f2e1cb266e42b38cf2fa5f45": "Linux",
                     "17701e3395cd29ecce64c89bf3dd65bf": "Android",
