@@ -6,8 +6,7 @@
                 "version": "2026-2-26",
                 "release_date": "2026-02-26T12:37:03Z",
                 "hashes": {
-                    "2e04f52f057889278a9793179517b5ea": "Windows",
-                    "36a15b83843f490e30eb26f29731c827": "Windows Debug Build"
+                    "2e04f52f057889278a9793179517b5ea": "Windows"
                 }
             },
             {
