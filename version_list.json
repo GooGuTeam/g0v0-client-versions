@@ -221,6 +221,7 @@
                 "release_date": "2025-12-14T13:28:16Z",
                 "hashes": {
                     "834e1145c31782162d1efd29a3b223be": "macOS",
+                    "770121f2a1288ea782e6df956986f441": "Windows",
                     "6766369d290fee7d0e165ef08b324582": "Linux",
                     "0aff7a2b65e05287b4068443e6bb4872": "Android",
                     "82dc17d731bb4c35ac6cb1e706497e48": "iOS"
