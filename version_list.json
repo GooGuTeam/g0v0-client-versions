@@ -127,6 +127,7 @@
                 "version": "2026.108.0-tachyon",
                 "release_date": "2026-01-07T17:31:17Z",
                 "hashes": {
+                    "6e5ec2e7df2958fe42aae03153ad3611": "macOS",
                     "46fd8583551d98e74d41de4d0b4e3601": "Windows",
                     "bb23656f0087dab2d23c064f1cca978c": "Linux",
                     "77cd528cd1c1822e35a2defcd5596626": "Android",
