@@ -217,6 +217,39 @@
         "name": "osu! GU",
         "versions": [
             {
+                "version": "2026.321.5-lazer",
+                "release_date": "2026-03-21T14:10:48Z",
+                "hashes": {
+                    "079747514aef7c9fc78945148795cd69": "macOS",
+                    "32e3201ef8a75925db861c5c920dbb0f": "Windows",
+                    "5e16b16953c5f1441cbc8dffc826d56f": "Linux",
+                    "10c4e8d9fc145b3646ed52ca566639d6": "Android",
+                    "7475d46772fc85a6b7100cf0fbe47ad8": "iOS"
+                }
+            },
+            {
+                "version": "2026.321.4-lazer",
+                "release_date": "2026-03-21T13:46:12Z",
+                "hashes": {
+                    "97fda3ad055639576ca6bd9dc3206310": "macOS",
+                    "ac22ebea989ec4d12ef7f85687167467": "Windows",
+                    "c9cc0984feaa9ef8b93888b9d6f4926c": "Linux",
+                    "769148ee7cbea0bebedc67c59819fe1f": "Android",
+                    "00dc920aacefdc64b4d51fb353560bbe": "iOS"
+                }
+            },
+            {
+                "version": "2026.321.3-lazer",
+                "release_date": "2026-03-21T13:33:35Z",
+                "hashes": {
+                    "4f930088967d337ae2be991b30b92b19": "macOS",
+                    "4d2a1104871bd920c9e6924390148c63": "Windows",
+                    "311e4fdde148b189715b189cf56192b9": "Linux",
+                    "fc469183a0d9e1135f5cc91435b6d4c2": "Android",
+                    "e9e736019be823a0690e41d509d08987": "iOS"
+                }
+            },
+            {
                 "version": "2026.129.0-lazer",
                 "release_date": "2026-01-29T09:16:10Z",
                 "hashes": {
@@ -236,39 +269,6 @@
                     "cd644f79cfa8ee779ec3c6612a95e78d": "Linux",
                     "5959fe71b74917be70cd05e3e9c3133c": "Android",
                     "2046f429cd145744b998981ee5ffceda": "iOS"
-                }
-            },
-            {
-                "version": "2026.111.0-lazer",
-                "release_date": "2026-01-11T07:18:25Z",
-                "hashes": {
-                    "8d62b3de6acef558d1aa30ac8a02bb21": "macOS",
-                    "605789dd94963a4a4b43fac08eea71c9": "Windows",
-                    "b4823ad581dae1419fefc62009822fd2": "Linux",
-                    "9c942426abe925009bbffd94df361b5b": "Android",
-                    "3adbef345bb0cb6c593ce57a1a0f02d0": "iOS"
-                }
-            },
-            {
-                "version": "2025.1220.0-lazer",
-                "release_date": "2025-12-20T11:00:46Z",
-                "hashes": {
-                    "e919268070e2b5ae264664b2030e8d2d": "macOS",
-                    "2fad4a5f57e6339f2b6dc66a65a17656": "Windows",
-                    "d02cc8914c65fcb8cd7a85bb3e498a90": "Linux",
-                    "02c7e20e7e27f18cf0ce71cbf0cb1ab5": "Android",
-                    "6122c18dfa37371227a482a76c15f84f": "iOS"
-                }
-            },
-            {
-                "version": "2025.1214.0-lazer",
-                "release_date": "2025-12-14T13:28:16Z",
-                "hashes": {
-                    "834e1145c31782162d1efd29a3b223be": "macOS",
-                    "770121f2a1288ea782e6df956986f441": "Windows",
-                    "6766369d290fee7d0e165ef08b324582": "Linux",
-                    "0aff7a2b65e05287b4068443e6bb4872": "Android",
-                    "82dc17d731bb4c35ac6cb1e706497e48": "iOS"
                 }
             }
         ]
