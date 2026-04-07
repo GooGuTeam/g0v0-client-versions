@@ -29,8 +29,7 @@
                 "version": "2026-3-14",
                 "release_date": "2026-03-14T05:50:01Z",
                 "hashes": {
-                    "34a20f9a8281e97a4cee9274a418d613": "Windows",
-                    "208ec173440f73f58948213dead2553d": "Windows Debug Build"
+                    "34a20f9a8281e97a4cee9274a418d613": "Windows"
                 }
             },
             {
