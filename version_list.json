@@ -3,6 +3,17 @@
         "name": "osu!",
         "versions": [
             {
+                "version": "2026.408.0-tachyon",
+                "release_date": "2026-04-07T16:39:52Z",
+                "hashes": {
+                    "055da6807d1d860c6a3c60f1b8b30865": "macOS",
+                    "7cd240aad0b4cad711b11c4fff52eab8": "Windows",
+                    "595c8fc103505387627cbf384b373aab": "Linux",
+                    "d6d0084381654f100af9c37befc42b4b": "Android",
+                    "ddfb50ac3b6f9bbe4a547cdd0d8efae8": "iOS"
+                }
+            },
+            {
                 "version": "2026.406.0-lazer",
                 "release_date": "2026-04-06T06:37:38Z",
                 "hashes": {
