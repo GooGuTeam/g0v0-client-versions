@@ -10,6 +10,13 @@
                 }
             },
             {
+                "version": "2026-4-12",
+                "release_date": "2026-04-12T11:07:45Z",
+                "hashes": {
+                    "560fe9f205d4c8628af41f9b0a9c4870": "Windows"
+                }
+            },
+            {
                 "version": "2026-4-7",
                 "release_date": "2026-04-07T05:11:16Z",
                 "hashes": {
@@ -29,14 +36,6 @@
                 "hashes": {
                     "43c82efa943777fbf470152827a9ca04": "Windows",
                     "7de369f55ed1e64965cef856e3ea79e1": "Windows Debug Build"
-                }
-            },
-            {
-                "version": "2026-3-18",
-                "release_date": "2026-03-17T16:11:54Z",
-                "hashes": {
-                    "176a7f56149492d8c7754e07583b19fc": "Windows",
-                    "8b7604da6dd64c963fef58dd1019d14a": "Windows Debug Build"
                 }
             }
         ]
