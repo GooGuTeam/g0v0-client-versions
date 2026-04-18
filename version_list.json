@@ -242,6 +242,9 @@
                 "version": "2026.329.0-lazer",
                 "release_date": "2026-03-29T09:38:20Z",
                 "hashes": {
+                    "244efdad595641b06cb351a4916bec99": "macOS",
+                    "698e3f7cf5a680fe21d2b701a49cc97e": "Windows",
+                    "bb4d264f5e70135552740970cc5c6f0a": "Linux",
                     "8f475b7c43594b69d55966e4098417d2": "Android",
                     "c1b02a591f5316b114d3a72500c340e0": "iOS"
                 }
@@ -250,6 +253,9 @@
                 "version": "2026.321.5-lazer",
                 "release_date": "2026-03-21T14:10:48Z",
                 "hashes": {
+                    "079747514aef7c9fc78945148795cd69": "macOS",
+                    "32e3201ef8a75925db861c5c920dbb0f": "Windows",
+                    "5e16b16953c5f1441cbc8dffc826d56f": "Linux",
                     "10c4e8d9fc145b3646ed52ca566639d6": "Android",
                     "7475d46772fc85a6b7100cf0fbe47ad8": "iOS"
                 }
@@ -258,6 +264,9 @@
                 "version": "2026.321.4-lazer",
                 "release_date": "2026-03-21T13:46:12Z",
                 "hashes": {
+                    "97fda3ad055639576ca6bd9dc3206310": "macOS",
+                    "ac22ebea989ec4d12ef7f85687167467": "Windows",
+                    "c9cc0984feaa9ef8b93888b9d6f4926c": "Linux",
                     "769148ee7cbea0bebedc67c59819fe1f": "Android",
                     "00dc920aacefdc64b4d51fb353560bbe": "iOS"
                 }
