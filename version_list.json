@@ -3,6 +3,17 @@
         "name": "osu!",
         "versions": [
             {
+                "version": "2026.423.0-lazer",
+                "release_date": "2026-04-22T18:56:58Z",
+                "hashes": {
+                    "e43b46d00239da12ea5e84c83964d703": "macOS",
+                    "e7cdb8bfc55854a56408c4d7b63b0b3d": "Windows",
+                    "07e47b2fdc9204f7b55d73fa770ff55d": "Linux",
+                    "c21abb265b2103b2f05459b349db7a97": "Android",
+                    "1dc1ba8fd295a426dd391fefde9095b4": "iOS"
+                }
+            },
+            {
                 "version": "2026.421.0-lazer",
                 "release_date": "2026-04-20T16:35:06Z",
                 "hashes": {
@@ -66,72 +77,6 @@
                     "e97f63c9c360c944ad6eb1d1d76cf0c8": "Linux",
                     "19f5fbcfd7d7e0502351823e4d2cc1a0": "Android",
                     "51d50ac221a37a49491af3dedb60fae2": "iOS"
-                }
-            },
-            {
-                "version": "2026.326.1-tachyon",
-                "release_date": "2026-03-26T04:42:50Z",
-                "hashes": {
-                    "5f165236f38d167277424c2e03a29f82": "macOS",
-                    "5dee78051b1f1d0bc765260e48f10f96": "Windows",
-                    "f5e05f11adb41d193295ff00fac27563": "Linux",
-                    "402f6543a8171f011916e115deb19fbd": "Android",
-                    "71a37325106d63e9140c15896efbdcb1": "iOS"
-                }
-            },
-            {
-                "version": "2026.326.0-tachyon",
-                "release_date": "2026-03-25T17:03:12Z",
-                "hashes": {
-                    "cfc8a7ce7ce6fda02e615e34a359caf0": "macOS",
-                    "f1b8e85088ec28896681eef14fae0864": "Windows",
-                    "42ae4ab7f4791a001ddaf6fd2d564b6b": "Linux",
-                    "59b34c3cf68675f2aa828a485b8b0cfd": "Android",
-                    "e56c9d3e971e4b3683efbbaea6740643": "iOS"
-                }
-            },
-            {
-                "version": "2026.318.0-tachyon",
-                "release_date": "2026-03-17T15:50:07Z",
-                "hashes": {
-                    "49bfd231c598d2b8a566061a505e7f5c": "macOS",
-                    "a4f04e39d44941bd922462f35ad5403f": "Windows",
-                    "2c163c6fc101d6dc2b117c2e04fc2707": "Linux",
-                    "65174e6db480981772de544cc59e7644": "Android",
-                    "cff12c73ac0b5794bfbc025d92f56ea0": "iOS"
-                }
-            },
-            {
-                "version": "2026.311.0-tachyon",
-                "release_date": "2026-03-10T18:43:43Z",
-                "hashes": {
-                    "7694658c754f80b022687597e248bdc1": "macOS",
-                    "aeab225eee95162804a578e5f1a4294d": "Windows",
-                    "b9f323c5f44f1129cd5ce8810d388cf0": "Linux",
-                    "4eba77302b61580a94e8f570dd1d2f59": "Android",
-                    "4f5b3b7a6b67aec59f86346b44db419c": "iOS"
-                }
-            },
-            {
-                "version": "2026.307.0-tachyon",
-                "release_date": "2026-03-07T10:25:26Z",
-                "hashes": {
-                    "329f9e6246124a398f0e4d4b90051ade": "macOS",
-                    "d658e6344bfca9557f97ed67390ed0d4": "Windows",
-                    "3e325d082b49279acda69c96c5f65362": "Linux",
-                    "564760f56923e4ad09f00c51c8758ad6": "Android",
-                    "c27f219f5126a91ad5d589505f3ec948": "iOS"
-                }
-            },
-            {
-                "version": "2026.305.0-lazer",
-                "release_date": "2026-03-05T06:35:37Z",
-                "hashes": {
-                    "97891a4fc8d34a31886f70f36c788803": "macOS",
-                    "c536da8e898098e9c2c29af3f1c12bf7": "Windows",
-                    "c86c7cb946b0d6cc58418e800485cb72": "Linux",
-                    "ff278030a8279a6ad1584595f8858b3f": "Android",
-                    "adad7468cd46f79c9d672ec4812f278d": "iOS"
                 }
             }
         ]
