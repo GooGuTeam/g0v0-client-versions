@@ -1,10 +1,144 @@
 [
     {
         "name": "osu!",
-        "versions": []
+        "versions": [
+            {
+                "version": "2026.425.0-lazer",
+                "release_date": "2026-04-24T18:12:19Z",
+                "hashes": {
+                    "88229cc5e943eeeefbbab6f580048e99": "macOS",
+                    "fb5367962e4c9541b1ce45144b5659f4": "Windows",
+                    "99270fbf9955bf121afa736c0a66a7d1": "Linux",
+                    "072cdcaf75c084bd48e3b1e6198e345d": "Android",
+                    "007c3816b5071d9dc15534d30f168d3f": "iOS"
+                }
+            },
+            {
+                "version": "2026.423.0-lazer",
+                "release_date": "2026-04-22T18:56:58Z",
+                "hashes": {
+                    "e43b46d00239da12ea5e84c83964d703": "macOS",
+                    "e7cdb8bfc55854a56408c4d7b63b0b3d": "Windows",
+                    "07e47b2fdc9204f7b55d73fa770ff55d": "Linux",
+                    "c21abb265b2103b2f05459b349db7a97": "Android",
+                    "1dc1ba8fd295a426dd391fefde9095b4": "iOS"
+                }
+            },
+            {
+                "version": "2026.421.0-lazer",
+                "release_date": "2026-04-20T16:35:06Z",
+                "hashes": {
+                    "5344d5b9b61a7a4fc17e03939af0b445": "macOS",
+                    "1352d0db87799e9626e403f310dbbf6e": "Windows",
+                    "80cd2619a6281e94f76267220552d5f0": "Linux",
+                    "b4b59d7a78ee6cea1f0855ec2c57ead9": "Android",
+                    "76a98f2a2a2d8afd9d1d487e290ca7cc": "iOS"
+                }
+            },
+            {
+                "version": "2026.418.0-lazer",
+                "release_date": "2026-04-18T12:16:52Z",
+                "hashes": {
+                    "ae2b708bcc00b1f22772faee90e7a9dd": "macOS",
+                    "86f619de4a32989ba0ab392700679f24": "Windows",
+                    "5c0c68a5d56d18917421ec2d942a8ffb": "Linux",
+                    "1c9833d31fa21e6566a3469e7401e933": "Android",
+                    "733b9818c2397b775e7058b4aa06103c": "iOS"
+                }
+            },
+            {
+                "version": "2026.417.0-tachyon",
+                "release_date": "2026-04-17T07:36:37Z",
+                "hashes": {
+                    "f85618ae8ac64f226d112884f2c36680": "macOS",
+                    "2edd58dc3df151b177877a86d5c77c39": "Windows",
+                    "a54cc2ff74b9256f16fa4faa3f28ec24": "Linux",
+                    "9cbdda172efd05d0bdb99649b33463d2": "Android",
+                    "6d97ae5c0db5d0939cc2a2d82fd4bd20": "iOS"
+                }
+            },
+            {
+                "version": "2026.408.0-tachyon",
+                "release_date": "2026-04-07T16:39:52Z",
+                "hashes": {
+                    "055da6807d1d860c6a3c60f1b8b30865": "macOS",
+                    "7cd240aad0b4cad711b11c4fff52eab8": "Windows",
+                    "595c8fc103505387627cbf384b373aab": "Linux",
+                    "d6d0084381654f100af9c37befc42b4b": "Android",
+                    "ddfb50ac3b6f9bbe4a547cdd0d8efae8": "iOS"
+                }
+            },
+            {
+                "version": "2026.406.0-lazer",
+                "release_date": "2026-04-06T06:37:38Z",
+                "hashes": {
+                    "d3b1182f95157bd661039410b329b202": "macOS",
+                    "0345f817e85a830fc31ac7006e5208e5": "Windows",
+                    "55ddf3b1449daf8ddc535d2015dec175": "Linux",
+                    "a8c2e3138a7240875e873265fa355010": "Android",
+                    "6f4bd179a21d1b4388af1551c4cfe9a9": "iOS"
+                }
+            }
+        ]
     },
     {
         "name": "osu! GU",
-        "versions": []
+        "versions": [
+            {
+                "version": "2026.419.0-lazer",
+                "release_date": "2026-04-19T08:41:16Z",
+                "hashes": {
+                    "1876cb5a519edba6ec1f43ad712d78a6": "macOS",
+                    "4ed647db77943b6bfd7525ea9f2f938a": "Windows",
+                    "3c241e15ad2486a578785f674c40f20a": "Linux",
+                    "b851e5f596c1479ae5d8662b56ecc346": "Android",
+                    "363200cec878e3aafb47f182311c0c3e": "iOS"
+                }
+            },
+            {
+                "version": "2026.413.0-lazer",
+                "release_date": "2026-04-12T16:06:35Z",
+                "hashes": {
+                    "3e183fa2f23fb2e689251f1bdc4169ea": "macOS",
+                    "f57097299d12643927ea9b995bfa65e8": "Windows",
+                    "0462ea0552058ab7cc0b07378e152a61": "Linux",
+                    "2357b51483d27c0e63095441dbcefe6d": "Android",
+                    "39e46f43dec02702c0d6d99f10b38a81": "iOS"
+                }
+            },
+            {
+                "version": "2026.404.0-lazer",
+                "release_date": "2026-04-04T05:43:59Z",
+                "hashes": {
+                    "a19cd342e47a65e0ffc9c68a052ab79c": "macOS",
+                    "4295bd20d750ad796c3dcd1ee18d7f1c": "Windows",
+                    "37e4c94b738eeddc4e7e5c1ef40f4a63": "Linux",
+                    "38b47a352880e2e4292761dd3c4378a1": "Android",
+                    "b2d8bb06a78781ce7eb505857f3d404c": "iOS"
+                }
+            },
+            {
+                "version": "2026.329.0-lazer",
+                "release_date": "2026-03-29T09:38:20Z",
+                "hashes": {
+                    "244efdad595641b06cb351a4916bec99": "macOS",
+                    "698e3f7cf5a680fe21d2b701a49cc97e": "Windows",
+                    "bb4d264f5e70135552740970cc5c6f0a": "Linux",
+                    "8f475b7c43594b69d55966e4098417d2": "Android",
+                    "c1b02a591f5316b114d3a72500c340e0": "iOS"
+                }
+            },
+            {
+                "version": "2026.321.5-lazer",
+                "release_date": "2026-03-21T14:10:48Z",
+                "hashes": {
+                    "079747514aef7c9fc78945148795cd69": "macOS",
+                    "32e3201ef8a75925db861c5c920dbb0f": "Windows",
+                    "5e16b16953c5f1441cbc8dffc826d56f": "Linux",
+                    "10c4e8d9fc145b3646ed52ca566639d6": "Android",
+                    "7475d46772fc85a6b7100cf0fbe47ad8": "iOS"
+                }
+            }
+        ]
     }
 ]
