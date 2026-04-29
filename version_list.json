@@ -41,6 +41,7 @@
                 "hashes": {
                     "5344d5b9b61a7a4fc17e03939af0b445": "macOS",
                     "1352d0db87799e9626e403f310dbbf6e": "Windows",
+                    "80cd2619a6281e94f76267220552d5f0": "Linux",
                     "b4b59d7a78ee6cea1f0855ec2c57ead9": "Android",
                     "76a98f2a2a2d8afd9d1d487e290ca7cc": "iOS"
                 }
