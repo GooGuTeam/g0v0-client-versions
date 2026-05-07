@@ -110,7 +110,6 @@
                 "version": "2026.413.0-lazer",
                 "release_date": "2026-04-12T16:06:35Z",
                 "hashes": {
-                    "3e183fa2f23fb2e689251f1bdc4169ea": "macOS",
                     "f57097299d12643927ea9b995bfa65e8": "Windows",
                     "0462ea0552058ab7cc0b07378e152a61": "Linux",
                     "2357b51483d27c0e63095441dbcefe6d": "Android",
