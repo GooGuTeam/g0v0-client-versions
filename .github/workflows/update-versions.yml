@@ -3,7 +3,7 @@ name: Update Version List
 on:
   push:
     branches:
-      - main
+      - script
     paths:
       - 'main.py'
       - 'default_clients.json'
@@ -22,6 +22,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: script
 
       - name: Install uv
         uses: astral-sh/setup-uv@v5
@@ -41,10 +43,11 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: uv run main.py
 
-      - name: Commit and push changes
+      - name: Commit and push changes to main
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update version list [skip ci]"
           file_pattern: "version_list.json community_versions/*.json"
+          branch: main
           commit_user_name: "github-actions[bot]"
           commit_user_email: "github-actions[bot]@users.noreply.github.com"

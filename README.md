@@ -2,7 +2,13 @@
 
 This repository provides a tool to generate version hashes for different clients of the osu! game. The version hashes are used to identify specific versions of the game across various platforms.
 
-The latest generated version hashes can be found in the [version_list.json](version_list.json) file and the [community_versions/](community_versions/) directory.
+**Branches:**
+- [`script`](https://github.com/GooGuTeam/g0v0-client-versions/tree/script) — source code, client definitions, and CI workflow
+- [`main`](https://github.com/GooGuTeam/g0v0-client-versions/tree/main) — auto-generated version hashes only
+
+The latest generated version hashes can be found on the [main](https://github.com/GooGuTeam/g0v0-client-versions/tree/main) branch:
+- [version_list.json](https://github.com/GooGuTeam/g0v0-client-versions/blob/main/version_list.json)
+- [community_versions/](https://github.com/GooGuTeam/g0v0-client-versions/tree/main/community_versions/)
 
 ## Client schema definition
 
@@ -24,15 +30,15 @@ The client definitions are stored in JSON files that follow a specific schema. T
 
 ## Generate for your own client by adding a new community clients definition
 
-You can add your clients definition by creating a new JSON file in the `community_clients/` directory and send a pull request to this repository.
+You can add your clients definition by creating a new JSON file in the `community_clients/` directory and send a pull request to this repository (targeting the `script` branch).
 
 1. Fork this repository.
 
 2. Create a new JSON file in the `community_clients/` directory following the same schema as `default_clients.json`.
 
-3. Push your changes to your forked repository and create a pull request to this repository.
+3. Push your changes to your forked repository and create a pull request to this repository targeting the `script` branch.
 
-4. Once your pull request is merged, you can find the generated `{your_client}.json` at `community_versions/`. Add the generated URL to your g0v0-server configuration.
+4. Once your pull request is merged, you can find the generated `{your_client}.json` at `community_versions/` on the `main` branch. Add the generated URL to your g0v0-server configuration.
 
 ```env
 CLIENT_VERSION_URLS='[
@@ -43,13 +49,13 @@ CLIENT_VERSION_URLS='[
 
 ## Generate for your own client by replacing `default_clients.json`
 
-You can also modify the `default_clients.json` file to include your own client details. The CI workflow will automatically generate the version hashes for your client whenever you push changes to the repository.
+You can also modify the `default_clients.json` file to include your own client details (on the `script` branch). The CI workflow will automatically generate the version hashes for your client whenever you push changes to the `script` branch.
 
 1. Fork this repository.
 
-2. Modify the `default_clients.json` file to include your client details. You can specify the repository, description, and files for different platforms.
+2. Modify the `default_clients.json` file on the `script` branch to include your client details. You can specify the repository, description, and files for different platforms.
 
-3. Push your changes to your forked repository. The CI workflow will automatically run the version hash generator and update the `version_list.json` file with the new hashes.
+3. Push your changes to your forked repository's `script` branch. The CI workflow will automatically run the version hash generator and update the `version_list.json` file on the `main` branch with the new hashes.
 
 4. Add the generated `version_list.json` url to your g0v0-server configuration to enable your client to use the generated version hashes.
 
