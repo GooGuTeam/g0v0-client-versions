@@ -47,6 +47,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add version_list.json community_versions/*.json
           git stash push --message "generated-files" || true
           git fetch origin main
           git checkout main
