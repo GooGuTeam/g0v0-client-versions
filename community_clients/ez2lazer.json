@@ -5,12 +5,28 @@
         "owner": "SK-la",
         "repo": "Ez2Lazer",
         "files": {
-            "Windows": {
+            "Windows x64": {
                 "asset_name": "Ez2Lazer_release_x64.zip",
                 "internal_name": "osu.Game.dll"
             },
-            "Windows Debug Build": {
-                "asset_name": "Ez2Lazer_debug_x64.zip",
+            "Windows ARM64": {
+                "asset_name": "Ez2Lazer_release_windows_arm64.zip",
+                "internal_name": "osu.Game.dll"
+            },
+            "macOS ARM64": {
+                "asset_name": "Ez2Lazer_release_macos_arm64.zip",
+                "internal_name": "Ez2Lazer.app/Contents/Resources/osu.Game.dll"
+            },
+            "macOS x64": {
+                "asset_name": "Ez2Lazer_release_macos_x64.zip",
+                "internal_name": "Ez2Lazer.app/Contents/Resources/osu.Game.dll"
+            },
+            "Linux x64": {
+                "asset_name": "Ez2Lazer_release_linux_x64.zip",
+                "internal_name": "osu.Game.dll"
+            },
+            "Linux ARM64": {
+                "asset_name": "Ez2Lazer_release_linux_arm64.zip",
                 "internal_name": "osu.Game.dll"
             }
         },
