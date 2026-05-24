@@ -6,35 +6,50 @@
                 "version": "2026.524.0",
                 "release_date": "2026-05-24T10:13:04Z",
                 "hashes": {
-                    "cb91cab8177c4cfadb0aada3a70e82fd": "Windows"
+                    "cb91cab8177c4cfadb0aada3a70e82fd": "Windows x64",
+                    "ea1bb64d53b3af6c2dc52cd54f4d6429": "Windows ARM64",
+                    "54bbad03b77e549300dc0cb12f25d788": "macOS x64",
+                    "d546adcf67b5afe78be0077c7d03fad3": "Linux ARM64"
                 }
             },
             {
                 "version": "2026.5.23",
                 "release_date": "2026-05-23T04:24:49Z",
                 "hashes": {
-                    "b2bd32fa3fce42d11488e9724bae8a71": "Windows"
+                    "b2bd32fa3fce42d11488e9724bae8a71": "Windows x64",
+                    "06e4671e6ddc62997dc672a31ab7193b": "Windows ARM64",
+                    "5587d957e262e6da6f8e6cd852bae0c4": "macOS x64",
+                    "d1d45c414a395cc6e6c6f5eb8121e43e": "Linux ARM64"
                 }
             },
             {
                 "version": "2026.5.18",
                 "release_date": "2026-05-18T12:49:55Z",
                 "hashes": {
-                    "6363a8d96063cfbaaa22a2bd9aff2bda": "Windows"
+                    "6363a8d96063cfbaaa22a2bd9aff2bda": "Windows x64",
+                    "73844627706cb19ac9e0890ebd228cf4": "Windows ARM64",
+                    "3a927cf8a0be8cb4c82e9ed2dd573868": "macOS x64",
+                    "7a55f106c2cc0301ed831382e345b38d": "Linux ARM64"
                 }
             },
             {
                 "version": "2026-5-18",
                 "release_date": "2026-05-18T04:34:23Z",
                 "hashes": {
-                    "6d05df0f5fa8dc65c6602cc589f89ee1": "Windows"
+                    "6d05df0f5fa8dc65c6602cc589f89ee1": "Windows x64",
+                    "6704482d21e9a26ff0228f6dc91c2ce8": "Windows ARM64",
+                    "e2c9c6b536459385a9e93fa3543f03be": "macOS x64",
+                    "317f3e0056b05dbcc7106d95c8ff35db": "Linux ARM64"
                 }
             },
             {
                 "version": "2026-5-11",
                 "release_date": "2026-05-11T16:07:46Z",
                 "hashes": {
-                    "4f5c09423465f5c5cdd3e0933cb96377": "Windows"
+                    "4f5c09423465f5c5cdd3e0933cb96377": "Windows x64",
+                    "21af5e2de3ee7a249499feacb766d37a": "Windows ARM64",
+                    "4912d9b0b7c26bcd29d91a3f2f70f327": "macOS x64",
+                    "a35d62cfa69f0994e10b6035c0b5169a": "Linux ARM64"
                 }
             }
         ]
