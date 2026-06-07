@@ -3,6 +3,16 @@
         "name": "Ez2Lazer",
         "versions": [
             {
+                "version": "2026.607.0-ez2lazer",
+                "release_date": "2026-06-07T15:35:26Z",
+                "hashes": {
+                    "c7d1007b57d32e2f107bbecde0f97f33": "Windows x64",
+                    "63b1f8065e5058b0492a6fd8b9972412": "Windows ARM64",
+                    "1ea76fc8cbea3848c0f9f18bde3a1f30": "macOS",
+                    "a59c9ccc80910d05c91a467a4cb6ff60": "Linux"
+                }
+            },
+            {
                 "version": "2026.605.0-ez2lazer",
                 "release_date": "2026-06-05T15:08:21Z",
                 "hashes": {
@@ -40,16 +50,6 @@
                     "81d28c9e7d7bd11291ca7ee20b480184": "Windows ARM64",
                     "a4adc3ecff5986996cd2cd95b2388416": "macOS",
                     "c2d5b7cd64b4f26754d56f77ecb07bc4": "Linux"
-                }
-            },
-            {
-                "version": "2026.524.0",
-                "release_date": "2026-05-24T10:13:04Z",
-                "hashes": {
-                    "cb91cab8177c4cfadb0aada3a70e82fd": "Windows x64",
-                    "ea1bb64d53b3af6c2dc52cd54f4d6429": "Windows ARM64",
-                    "54bbad03b77e549300dc0cb12f25d788": "macOS",
-                    "d546adcf67b5afe78be0077c7d03fad3": "Linux"
                 }
             }
         ]
