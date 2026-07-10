@@ -3,6 +3,17 @@
         "name": "osu!",
         "versions": [
             {
+                "version": "2026.711.0-lazer",
+                "release_date": "2026-07-10T18:10:18Z",
+                "hashes": {
+                    "ed56e4e9316fe9944624b7e9ddeaec0e": "macOS",
+                    "9889476c2a109c4b63e3cd333676c1c5": "Windows",
+                    "881e06b5b5b6e8a45996cbcf32b35293": "Linux",
+                    "e6ccdda5c717c04606330836f5316681": "Android",
+                    "b75d3dbe60c69e2e72ea95d13aedc90c": "iOS"
+                }
+            },
+            {
                 "version": "2026.709.0-tachyon",
                 "release_date": "2026-07-08T16:11:31Z",
                 "hashes": {
@@ -154,28 +165,6 @@
                     "c640493e9c952adf7ac4bda49bab53fb": "Linux",
                     "036ed960430a61d74f062bfb2a597021": "Android",
                     "1edc2348be6d408523372253c761a650": "iOS"
-                }
-            },
-            {
-                "version": "2026.428.0-tachyon",
-                "release_date": "2026-04-28T14:39:14Z",
-                "hashes": {
-                    "2731bd1945571bebb343d717cef688ac": "macOS",
-                    "b4b0ea3d486ce00cf8d246077011dfe0": "Windows",
-                    "c9a5ee82f483ab2db3f16c9ec805a8b9": "Linux",
-                    "dd9c6d53566f444b9cdfdfa91924e9f0": "Android",
-                    "d4194b5447a48263f6d27b3e1ff0a98b": "iOS"
-                }
-            },
-            {
-                "version": "2026.425.0-lazer",
-                "release_date": "2026-04-24T18:12:19Z",
-                "hashes": {
-                    "88229cc5e943eeeefbbab6f580048e99": "macOS",
-                    "fb5367962e4c9541b1ce45144b5659f4": "Windows",
-                    "99270fbf9955bf121afa736c0a66a7d1": "Linux",
-                    "072cdcaf75c084bd48e3b1e6198e345d": "Android",
-                    "007c3816b5071d9dc15534d30f168d3f": "iOS"
                 }
             }
         ]
