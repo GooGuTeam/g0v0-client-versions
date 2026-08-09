@@ -129,6 +129,17 @@
         "name": "osu! GU",
         "versions": [
             {
+                "version": "2026.810.0-lazer",
+                "release_date": "2026-08-09T18:36:05Z",
+                "hashes": {
+                    "06c32ff50eea9b71971932d118bfd131": "macOS",
+                    "b66db47e7b8591bd4f9323c0c2a32962": "Windows",
+                    "c5c76ac4e1d287329ff810b1dd69e21a": "Linux",
+                    "5ce78a3f6f2ffde8ebb6a86e1ad989bd": "Android",
+                    "dd53f96e9056719f2056dbc8ca740a7b": "iOS"
+                }
+            },
+            {
                 "version": "2026.807.0-lazer",
                 "release_date": "2026-08-07T09:43:53Z",
                 "hashes": {
@@ -170,17 +181,6 @@
                     "d32d5d024326a2da80069b1dcce37401": "Linux",
                     "4363eab4cde6bcd45bcb44766c911a12": "Android",
                     "d87d577f52fbb1a4a05d02914df6f1c7": "iOS"
-                }
-            },
-            {
-                "version": "2026.621.0-lazer",
-                "release_date": "2026-06-21T03:18:31Z",
-                "hashes": {
-                    "c037a2095376e23c6d20cf8e41a4d417": "macOS",
-                    "06df06f9c63f2c3a7eeb2c78cd79291c": "Windows",
-                    "262d57b123f39173fd93a7f3833b5619": "Linux",
-                    "03fca02fd34cb1dc26a34e5bb2339235": "Android",
-                    "05e6fa4b81d0d17f17d5887ab0f832ae": "iOS"
                 }
             }
         ]
