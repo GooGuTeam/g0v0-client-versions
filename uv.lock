@@ -439,15 +439,6 @@ wheels = [
 ]
 
 [[package]]
-name = "pysquashfsimage"
-version = "0.9.0"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/62/b6/8a453795e78c743bb6d765b8288f86ecbba4e3522bcc1db534142062ec0e/PySquashfsImage-0.9.0.tar.gz", hash = "sha256:d3330ccd111ac2ef2cebf0c392077fe8608e2760862531d960ec9cb6c6d3655f", size = 44190, upload-time = "2023-07-02T23:41:10.785Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/28/f7/fa862ed72fbd05c930aeb979785fcfe33f9b874e639eb563f5ab9e46e277/PySquashfsImage-0.9.0-py2.py3-none-any.whl", hash = "sha256:a8ea154bf946f985c65fab7d8c08dc73da7ad47a0aebf0d13ae50ae56e369f90", size = 43220, upload-time = "2023-07-02T23:41:09.091Z" },
-]
-
-[[package]]
 name = "ruff"
 version = "0.14.11"
 source = { registry = "https://pypi.org/simple" }
@@ -542,7 +533,6 @@ source = { virtual = "." }
 dependencies = [
     { name = "aiofiles" },
     { name = "aiohttp" },
-    { name = "pysquashfsimage" },
     { name = "stream-unzip" },
 ]
 
@@ -555,7 +545,6 @@ dev = [
 requires-dist = [
     { name = "aiofiles", specifier = ">=25.1.0" },
     { name = "aiohttp", specifier = ">=3.13.3" },
-    { name = "pysquashfsimage", specifier = ">=0.9.0" },
     { name = "stream-unzip", specifier = ">=0.0.99" },
 ]
 

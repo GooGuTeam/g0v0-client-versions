@@ -1,3 +1,4 @@
+import asyncio
 from collections.abc import Awaitable, Callable
 import hashlib
 import json
@@ -155,29 +156,31 @@ async def process_appimage(file_url: str, internal_name: str) -> str | None:
             async for chunk in resp.content.iter_chunked(65536):
                 await fp.write(chunk)
 
-        # run appimage extraction
-        temp_path.chmod(0o755)
+        # 7z auto-detects the embedded squashfs and extracts the requested file to stdout
         process = await asyncio.create_subprocess_exec(
+            "7z",
+            "x",
+            "-so",
             str(temp_path),
-            "--appimage-extract",
-            cwd=tmpdirname,
+            internal_name,
             stdin=asyncio.subprocess.DEVNULL,
-            stdout=asyncio.subprocess.DEVNULL,
+            stdout=asyncio.subprocess.PIPE,
             stderr=asyncio.subprocess.DEVNULL,
         )
-        await process.communicate()
-        extracted_path = Path(tmpdirname) / "squashfs-root" / internal_name
-        if not extracted_path.exists():
-            return None
 
         # calculate md5
         md5 = hashlib.md5(usedforsecurity=False)
-        async with aio_open(extracted_path, "rb") as fp:
-            while True:
-                data = await fp.read(65536)
-                if not data:
-                    break
-                md5.update(data)
+        total = 0
+        while True:
+            data = await process.stdout.read(65536)
+            if not data:
+                break
+            total += len(data)
+            md5.update(data)
+        await process.wait()
+
+        if process.returncode != 0 or total == 0:
+            return None
         return md5.hexdigest()
 
 
@@ -360,7 +363,6 @@ async def main(gh_token: str = "", skip_default: bool = False, skip_community: b
 
 
 if __name__ == "__main__":
-    import asyncio
     import sys
 
     if sys.platform != "linux":
