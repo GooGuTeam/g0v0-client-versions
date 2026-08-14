@@ -137,7 +137,30 @@
         ]
     },
     {
-        "name": "osu! GU",
-        "versions": []
+        "name": "g0v0!",
+        "versions": [
+            {
+                "version": "2026.814.3-g0v0",
+                "release_date": "2026-08-14T11:26:44Z",
+                "hashes": {
+                    "3d6037d8f2951c6bdec9f51762adca7f": "Windows ARM64",
+                    "197201dfd4132302bc846ac1994d7166": "macOS ARM64",
+                    "d5e619ad4d0cd6d1998be3b6da70bdbf": "Linux ARM64",
+                    "4c60ded62fb34a0255a1a13db4d7e3d6": "Android",
+                    "d7998c072c498ad862b2586008a49076": "iOS"
+                }
+            },
+            {
+                "version": "2026.814.2-g0v0",
+                "release_date": "2026-08-14T09:47:36Z",
+                "hashes": {
+                    "75bc7470439c5443928019b74b303899": "Windows ARM64",
+                    "464fa78f25bddf564077873af479ccce": "macOS ARM64",
+                    "86bbbf34bf044eb2e0c1b0c777e966d1": "Linux ARM64",
+                    "c188d02f5819fb241c524f41aa8fa11e": "Android",
+                    "51e3ee618d6823ea21636ea2340f14a1": "iOS"
+                }
+            }
+        ]
     }
 ]
