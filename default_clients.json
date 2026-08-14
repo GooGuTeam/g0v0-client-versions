@@ -23,21 +23,34 @@
         "count": 5
     },
     {
-        "name": "osu! GU",
-        "description": "GooGuTeam's custom osu! client for g0v0-server",
+        "name": "g0v0!",
+        "description": "g0v0! -- free and open rhythm experience! (a community project based on osu!lazer codebase)",
         "owner": "GooGuTeam",
-        "repo": "osu",
+        "repo": "g0v0",
         "files": {
-            "macOS": {
-                "asset_name": "osu.app.Apple.Silicon.zip",
-                "internal_name": "osu! GU.app/Contents/MacOS/osu.Game.dll"
-            },
-            "Windows": {
-                "asset_name": "osu-lazer-gu-win-Portable.zip",
+            "Windows x64": {
+                "asset_name": "g0v0-win-Portable.zip",
                 "internal_name": "current/osu.Game.dll"
             },
-            "Linux": {
-                "asset_name": "osu.AppImage",
+            "Windows ARM64": {
+                "asset_name": "g0v0-win-arm64-Portable.zip",
+                "internal_name": "current/osu.Game.dll"
+            },
+            "macOS x64": {
+                "asset_name": "g0v0.app.Intel.zip",
+                "internal_name": "g0v0!.app/Contents/MacOS/osu.Game.dll"
+            },
+            "macOS ARM64": {
+                "asset_name": "g0v0.app.Apple.Silicon.zip",
+                "internal_name": "g0v0!.app/Contents/MacOS/osu.Game.dll"
+            },
+            "Linux x64": {
+                "asset_name": "g0v0.AppImage",
+                "internal_name": "usr/bin/osu.Game.dll",
+                "type": "appimage"
+            },
+            "Linux ARM64": {
+                "asset_name": "g0v0-arm64.AppImage",
                 "internal_name": "usr/bin/osu.Game.dll",
                 "type": "appimage"
             }
