@@ -140,6 +140,17 @@
         "name": "g0v0!",
         "versions": [
             {
+                "version": "2026.816.0-g0v0",
+                "release_date": "2026-08-16T09:54:48Z",
+                "hashes": {
+                    "e4c824b514f906739da107ab898134d2": "Windows ARM64",
+                    "b0766127193c0b01718523716e5cecf2": "macOS ARM64",
+                    "5c5850287ef4008055843f42577fd78e": "Linux ARM64",
+                    "42238ec4d6083fe608f2553db1a09d5e": "Android",
+                    "e07d5ec84a6a917e41acbe2d8237f15f": "iOS"
+                }
+            },
+            {
                 "version": "2026.814.3-g0v0",
                 "release_date": "2026-08-14T11:26:44Z",
                 "hashes": {
