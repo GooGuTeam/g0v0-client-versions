@@ -28,29 +28,16 @@
         "owner": "GooGuTeam",
         "repo": "g0v0",
         "files": {
-            "Windows x64": {
+            "Windows": {
                 "asset_name": "g0v0-win-Portable.zip",
                 "internal_name": "current/osu.Game.dll"
             },
-            "Windows ARM64": {
-                "asset_name": "g0v0-win-arm64-Portable.zip",
-                "internal_name": "current/osu.Game.dll"
-            },
-            "macOS x64": {
+            "macOS": {
                 "asset_name": "g0v0.app.Intel.zip",
                 "internal_name": "g0v0!.app/Contents/MacOS/osu.Game.dll"
             },
-            "macOS ARM64": {
-                "asset_name": "g0v0.app.Apple.Silicon.zip",
-                "internal_name": "g0v0!.app/Contents/MacOS/osu.Game.dll"
-            },
-            "Linux x64": {
+            "Linux": {
                 "asset_name": "g0v0.AppImage",
-                "internal_name": "usr/bin/osu.Game.dll",
-                "type": "appimage"
-            },
-            "Linux ARM64": {
-                "asset_name": "g0v0-arm64.AppImage",
                 "internal_name": "usr/bin/osu.Game.dll",
                 "type": "appimage"
             }
