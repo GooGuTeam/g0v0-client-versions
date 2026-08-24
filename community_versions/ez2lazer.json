@@ -26,6 +26,7 @@
                 "version": "2026.815.0-ez2lazer",
                 "release_date": "2026-08-15T07:06:01Z",
                 "hashes": {
+                    "ad54910a727b452cd22357be9fb11375": "Windows x64",
                     "42f64bf020b5f4cf142969fda07e9093": "Windows ARM64",
                     "7d91d426e5e36f5f74534c9b9df8454d": "macOS",
                     "f965d6f4d60e9cdba68efd492a98fdd3": "Linux"
