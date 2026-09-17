@@ -3,10 +3,19 @@
         "name": "Ez2Lazer",
         "versions": [
             {
+                "version": "2026.917.0-ez2lazer",
+                "release_date": "2026-09-17T01:35:16Z",
+                "hashes": {
+                    "2fe897adc657074ff41b0fe35adc5b83": "Windows x64",
+                    "1bb8aa64d40977ced046f43a2ce75853": "Windows ARM64",
+                    "920e918815ed83723d3613ed61bc7649": "macOS",
+                    "42793aaf6b5c654895ac12f16ab401cb": "Linux"
+                }
+            },
+            {
                 "version": "2026.913.0-ez2lazer",
                 "release_date": "2026-09-13T15:54:27Z",
                 "hashes": {
-                    "7127ad6a301263b58ce348a96c33957d": "Windows x64",
                     "2355ec5bfeaf09b2c97a2ec32380f9ef": "Windows ARM64",
                     "3b1c570b780bfbe6982abc39e0f03e7e": "macOS",
                     "3bf48ae523c2c9f818b7cc6d0eee1e5f": "Linux"
@@ -18,8 +27,7 @@
                 "hashes": {
                     "c0161092e3e8daa6c361596971b36be3": "Windows x64",
                     "e72972636cb80ee88b6215891486984d": "Windows ARM64",
-                    "82dbd89190ed7961ee758c3726df013c": "macOS",
-                    "9eae3f2d8ad7645816491952408dbe6d": "Linux"
+                    "82dbd89190ed7961ee758c3726df013c": "macOS"
                 }
             },
             {
@@ -40,16 +48,6 @@
                     "0d31b55910f333cee73466553d8f56c3": "Windows ARM64",
                     "3cfe08a8e4fbc111fbb017c29457f5c4": "macOS",
                     "ebe201f796169d7ff659414804e49dea": "Linux"
-                }
-            },
-            {
-                "version": "2026.830.1-ez2lazer",
-                "release_date": "2026-08-30T09:17:09Z",
-                "hashes": {
-                    "701cf89b5c3a35d4552ff120e33b5c64": "Windows x64",
-                    "de6dfc81e099b23bf1ccc72f6b8f20f7": "Windows ARM64",
-                    "5272955d22526c6a3c2b20fb5366d804": "macOS",
-                    "68eea8a3011217d22e2e60c5bbc416dc": "Linux"
                 }
             }
         ]
