@@ -117,7 +117,6 @@
                 "release_date": "2026-07-26T09:42:00Z",
                 "hashes": {
                     "1b9033c6168b59131d5670855a8d14ff": "macOS",
-                    "0be9f391cc11785d3c279201e77c7dc7": "Windows",
                     "97fc9752f6bbb64948f9a9e90b13c483": "Linux",
                     "7249a5db668553d64ec9b99262c3352f": "Android",
                     "194b4c0b14ccaf1f8b4405b35794f114": "iOS"
