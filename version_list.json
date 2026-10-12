@@ -173,6 +173,17 @@
         "name": "g0v0!",
         "versions": [
             {
+                "version": "2026.1012.1-robin",
+                "release_date": "2026-10-12T13:53:19Z",
+                "hashes": {
+                    "3d5714d5fe40f4903bebed81c40c4e25": "Windows",
+                    "cb4223ce09517e7cdd8683f82e6902e2": "macOS",
+                    "3a7ce62fedeaf9873ff9b076e7a5a436": "Linux",
+                    "8ef7e4f6c40c3f2ac15ee1c76f304c20": "Android",
+                    "5f1558f7a5690164143f2e9b143949d3": "iOS"
+                }
+            },
+            {
                 "version": "2026.1012.0-g0v0",
                 "release_date": "2026-10-11T16:56:53Z",
                 "hashes": {
