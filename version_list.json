@@ -184,6 +184,17 @@
         "name": "g0v0!",
         "versions": [
             {
+                "version": "2026.1022.1-g0v0",
+                "release_date": "2026-10-21T17:28:42Z",
+                "hashes": {
+                    "c6cd857bf09abdd763ddac347a1bce4a": "Windows",
+                    "32ef4bea982f65f6079bdf8ad51738b2": "macOS",
+                    "23bf7893722b609ea175fc1024e91aa8": "Linux",
+                    "6d72bfe217d0ed2113669248059d59f7": "Android",
+                    "39d95b36d21cf6a980232e0604f974b2": "iOS"
+                }
+            },
+            {
                 "version": "2026.1012.1-robin",
                 "release_date": "2026-10-12T13:53:19Z",
                 "hashes": {
@@ -236,17 +247,6 @@
                     "0266685e4ac8d392525fe2c522b1154f": "Linux",
                     "b35918aab62c9aa8fc8d9ec33010ae70": "Android",
                     "ca4deb028d9e38ae225a12514c8fc16d": "iOS"
-                }
-            },
-            {
-                "version": "2026.910.2-g0v0",
-                "release_date": "2026-09-10T08:37:10Z",
-                "hashes": {
-                    "a010fd8e4c1775e5a77e338cc224ec55": "Windows",
-                    "0a6fbd72bab7d45dc25b1d2e6c68126e": "macOS",
-                    "8272ef530a96c4b70cdf6f33090b99af": "Linux",
-                    "3c30949028d3a549f374db9cbb56fc32": "Android",
-                    "6ee26568b9519b9d42453b8145b03565": "iOS"
                 }
             }
         ]
