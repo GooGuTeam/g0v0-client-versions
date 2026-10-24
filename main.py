@@ -14,6 +14,22 @@ from stream_unzip import async_stream_unzip
 
 GITHUB_API_RELEASES_API = "https://api.github.com/repos/{owner}/{repo}/releases"
 
+# GitHub redirects release asset downloads to release-assets.githubusercontent.com with a signed
+# content-disposition header that is currently ~9 KB long. aiohttp caps header field/line values at
+# 8190 bytes by default, so every asset download fails with:
+#   400, message='Got more than 8190 bytes (9217) when reading Header value is too long.'
+# and the affected platforms silently end up without any hash. Raise the parser limits.
+HTTP_MAX_HEADER_FIELD_SIZE = 64 * 1024
+HTTP_MAX_HEADER_LINE_SIZE = 64 * 1024
+
+
+def create_session() -> ClientSession:
+    return ClientSession(
+        max_field_size=HTTP_MAX_HEADER_FIELD_SIZE,
+        max_line_size=HTTP_MAX_HEADER_LINE_SIZE,
+    )
+
+
 DEFAULT_CLIENTS_FILE = Path("default_clients.json")
 COMMUNITY_CLIENTS_PATH = Path("community_clients")
 DEFAULT_VERSION_LIST_OUTPUT = Path("version_list.json")
@@ -87,7 +103,7 @@ async def fetch_releases(owner: str, repo: str, count: int = 1, authorization: s
     page = 1
 
     async def _fetch_page(page: int):
-        async with ClientSession() as session:
+        async with create_session() as session:
             resp = await session.get(
                 GITHUB_API_RELEASES_API.format(owner=owner, repo=repo),
                 params={"per_page": 100, "page": page},
@@ -129,7 +145,7 @@ Processor = Callable[[str, str], Awaitable[str | None]]
 
 async def process_zip(file_url: str, internal_name: str) -> str | None:
     md5 = hashlib.md5(usedforsecurity=False)
-    async with ClientSession() as session, session.get(file_url) as resp:
+    async with create_session() as session, session.get(file_url) as resp:
 
         async def byte_stream():
             async for chunk in resp.content.iter_chunked(65536):
@@ -152,7 +168,7 @@ async def process_appimage(file_url: str, internal_name: str) -> str | None:
     with tempfile.TemporaryDirectory() as tmpdirname:
         temp_path = Path(tmpdirname) / "appimage_file"
 
-        async with aio_open(temp_path, "wb") as fp, ClientSession() as session, session.get(file_url) as resp:
+        async with aio_open(temp_path, "wb") as fp, create_session() as session, session.get(file_url) as resp:
             async for chunk in resp.content.iter_chunked(65536):
                 await fp.write(chunk)
 
@@ -188,7 +204,7 @@ async def process_exe(file_url: str, internal_name: str) -> str | None:
     with tempfile.TemporaryDirectory() as tmpdirname:
         temp_path = Path(tmpdirname) / "exe_file"
 
-        async with aio_open(temp_path, "wb") as fp, ClientSession() as session, session.get(file_url) as resp:
+        async with aio_open(temp_path, "wb") as fp, create_session() as session, session.get(file_url) as resp:
             async for chunk in resp.content.iter_chunked(65536):
                 await fp.write(chunk)
 
@@ -311,6 +327,58 @@ async def generate_versions(client: Client, gh_token: str) -> list[VersionInfo]:
     return versions
 
 
+def load_published_clients(output_path: Path) -> dict[str, list[VersionInfo]]:
+    """Read the already published version list, keyed by client name.
+
+    Used as a safety net so a failed run cannot erase hashes that were generated successfully
+    before (asset downloads fail regularly: GitHub outages, rate limits, HTTP parser limits).
+    """
+    if not output_path.is_file():
+        return {}
+    try:
+        published = json.loads(output_path.read_text())
+    except (OSError, ValueError) as e:
+        print(f"\t[!] Could not read existing {output_path}: {e}")
+        return {}
+    return {client["name"]: client.get("versions", []) for client in published}
+
+
+def write_version_list(version_list: list[VersionList], output_path: Path) -> None:
+    """Write the generated list, keeping previously published data where this run produced none."""
+    published = load_published_clients(output_path)
+    recovered_versions = 0
+    recovered_hashes = 0
+
+    for client in version_list:
+        previous_versions = published.get(client["name"], [])
+
+        if not client["versions"] and previous_versions:
+            client["versions"] = previous_versions
+            recovered_versions += len(previous_versions)
+            print(f"\t[!] {client['name']}: no versions could be fetched, keeping previously published ones")
+            continue
+
+        previous_by_version = {version["version"]: version.get("hashes", {}) for version in previous_versions}
+        for version in client["versions"]:
+            # Hashes are keyed by digest and labelled with a platform name, so merge per platform:
+            # a platform this run failed to hash keeps its previously published digest, while every
+            # digest this run did produce replaces the old one.
+            generated_platforms = set(version["hashes"].values())
+            for digest, platform in previous_by_version.get(version["version"], {}).items():
+                if platform in generated_platforms:
+                    continue
+                if digest in version["hashes"]:
+                    continue
+                version["hashes"][digest] = platform
+                recovered_hashes += 1
+                print(f"\t[!] {client['name']} {version['version']}: keeping previous {platform} hash")
+
+    if recovered_versions or recovered_hashes:
+        print(f"\t[!] Kept previously published data: {recovered_versions} version(s), {recovered_hashes} hash set(s).")
+
+    output_path.write_text(json.dumps(version_list, indent=4))
+
+
 async def main(gh_token: str = "", skip_default: bool = False, skip_community: bool = False):
     clients = read_default_clients()
     version_list: list[VersionList] = []
@@ -331,7 +399,7 @@ async def main(gh_token: str = "", skip_default: bool = False, skip_community: b
                 }
             )
         print("--- Default version list generated, output to version_list.json ---")
-        DEFAULT_VERSION_LIST_OUTPUT.write_text(json.dumps(version_list, indent=4))
+        write_version_list(version_list, DEFAULT_VERSION_LIST_OUTPUT)
 
     if not skip_community:
         print("=== Generating version list for community clients ===")
@@ -358,7 +426,7 @@ async def main(gh_token: str = "", skip_default: bool = False, skip_community: b
 
                 COMMUNITY_VERSION_LIST_OUTPUT.mkdir(exist_ok=True)
             output_path = COMMUNITY_VERSION_LIST_OUTPUT / community_filename
-            output_path.write_text(json.dumps(version_list, indent=4))
+            write_version_list(version_list, output_path)
             print(f"--- Community {community_filename} version list generated, output to {output_path} ---")
 
 
