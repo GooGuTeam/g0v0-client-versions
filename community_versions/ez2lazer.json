@@ -48,7 +48,6 @@
                 "hashes": {
                     "11e8f9e1c6a6a3ad7cb29e4c58869fdd": "Windows x64",
                     "b75b26c4d408699ab025bf5c7ea0f537": "Windows ARM64",
-                    "d461e5c3c41a0b3a8a7e37de0d841897": "macOS",
                     "e2946cbd09bac7583d94d8c3ce30f7e8": "Linux"
                 }
             }
