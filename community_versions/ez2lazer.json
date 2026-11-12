@@ -35,22 +35,12 @@
             {
                 "version": "2026.1012.0-ez2lazer",
                 "release_date": "2026-10-11T16:51:28Z",
-                "hashes": {
-                    "7cff901a282a82edc46e49b4002fa8c8": "Windows x64",
-                    "4cd4c6b68bd4c503b88355b968d0d0a2": "Windows ARM64",
-                    "b62674a4706e05d2e93b0fe0faf8a528": "macOS",
-                    "2ebbe3549e3bef76fe2e0bd0bfbca501": "Linux"
-                }
+                "hashes": {}
             },
             {
                 "version": "2026.1002.0-ez2lazer",
                 "release_date": "2026-10-02T12:13:18Z",
-                "hashes": {
-                    "11e8f9e1c6a6a3ad7cb29e4c58869fdd": "Windows x64",
-                    "b75b26c4d408699ab025bf5c7ea0f537": "Windows ARM64",
-                    "d461e5c3c41a0b3a8a7e37de0d841897": "macOS",
-                    "e2946cbd09bac7583d94d8c3ce30f7e8": "Linux"
-                }
+                "hashes": {}
             }
         ]
     }
